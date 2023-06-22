@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8652242116745707706
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1498935990344015445, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: m_Name
+      value: Ingame Music Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598016538080476935, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: songs.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598016538080476935, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: songs.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: dc44c93a930307447a88093959493209, type: 3}
+    - target: {fileID: 5598016538080476935, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: songs.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5e3f6582dfe84c44cabe4c2aff716348, type: 3}
+    - target: {fileID: 5598016538080476935, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: songs.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: ad4c90f02fd21234680f3ebea2bb009e, type: 3}
+    - target: {fileID: 5598016538080476935, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: songs.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: ec9a83a415ec5964f8fcdcf010fe42a3, type: 3}
+    - target: {fileID: 5598016538080476935, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: songs.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: a856f712495899746a9df0b10dbd41e8, type: 3}
+    - target: {fileID: 5598016538080476935, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: songs.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: cb65ef54d3f1aea4e9aa54bfef4ff234, type: 3}
+    - target: {fileID: 5598016538080476935, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: songs.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: dbfddcb1683979c489199c18b1034926, type: 3}
+    - target: {fileID: 5598016538080476935, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: songs.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 45571c33bfb862346821db9b88920e98, type: 3}
+    - target: {fileID: 5598016538080476935, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: songs.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: c5cc849320bf2fa469a83547b55c58fc, type: 3}
+    - target: {fileID: 5598016538080476935, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: songs.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e4853e569852b04b821ce22d9c20fde, type: 3}
+    - target: {fileID: 5598016538080476935, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: songs.Array.data[10]
+      value: 
+      objectReference: {fileID: 8300000, guid: 19e86ba56be709742a705a90f73c2e0a, type: 3}
+    - target: {fileID: 5598016538080476935, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: songs.Array.data[11]
+      value: 
+      objectReference: {fileID: 8300000, guid: d39aec09c10e3a44383f92295e4269a4, type: 3}
+    - target: {fileID: 5598016538080476935, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: songs.Array.data[12]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6645b72e0185e9f42a21e7075afbf6e3, type: 3}
+    - target: {fileID: 5598016538080476935, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: songs.Array.data[13]
+      value: 
+      objectReference: {fileID: 8300000, guid: c4e60b8958605ed45b0518e8c51a96db, type: 3}
+    - target: {fileID: 6494863488911703646, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494863488911703646, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494863488911703646, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494863488911703646, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494863488911703646, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494863488911703646, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494863488911703646, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494863488911703646, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494863488911703646, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494863488911703646, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494863488911703646, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7744fceac9d886b459b3b9dc78ccc196, type: 3}

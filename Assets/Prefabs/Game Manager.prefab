@@ -1,0 +1,783 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1377762248030813105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1377762248030813107}
+  - component: {fileID: 1377762248030813106}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1377762248030813107
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377762248030813105}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 119.31461, y: 264.41797, z: -146.12106}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1377762248376280839}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1377762248030813106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377762248030813105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a3c5ff14ab6ac4abc0341591cb77e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons:
+  - name: ATS 110-P
+    type: Arc Tactical Supplies Pistol
+    cost: 0
+    desc: ATS' most popular pistol, cheap and light.
+    model: {fileID: 8948769248393803883, guid: 076224fee8aab9740b56255a90fc52fa, type: 3}
+    bullet: {fileID: 7660068625065095931, guid: 158b0902a12b9dd4395ace7512b092b1, type: 3}
+    bulletSpawn: {fileID: 0}
+    damage: 15
+    speed: 0.35
+    fireType: 0
+    bulletType: 0
+    bulletSpeed: 250
+    spread: 0.4
+    ammoPerMag: 12
+    reloadSpeed: 1.5
+    burstSize: 0
+    burstSpeed: 0
+    playBurstSound: 0
+    consumeBurstAmmo: 0
+    explosionSize: 0
+    explosionLifetime: 0
+    useAmmo: 1
+    infiniteAmmo: 0
+    spawnFX: 1
+    speedMod: 1
+    jumpMod: 1
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 8300000, guid: 117a00fe18eb8f146a4edc731c83b9af, type: 3}
+  - name: DW Wasp
+    type: Dchovsky Weaponry Pistol
+    cost: 0
+    desc: Dchovsky's signature pistol, outfitted with a (cheap) suppressor, red dot
+      sight, and stock.
+    model: {fileID: 7582367838907537353, guid: 62eaa99f76be049499116cae46d5f144, type: 3}
+    bullet: {fileID: 7660068625065095931, guid: 158b0902a12b9dd4395ace7512b092b1, type: 3}
+    bulletSpawn: {fileID: 0}
+    damage: 25
+    speed: 0.65
+    fireType: 0
+    bulletType: 0
+    bulletSpeed: 300
+    spread: 0.2
+    ammoPerMag: 7
+    reloadSpeed: 2.5
+    burstSize: 0
+    burstSpeed: 0
+    playBurstSound: 0
+    consumeBurstAmmo: 0
+    explosionSize: 0
+    explosionLifetime: 0
+    useAmmo: 1
+    infiniteAmmo: 0
+    spawnFX: 1
+    speedMod: -0.25
+    jumpMod: -0.25
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 8300000, guid: 12d101b8eff753a48ae7b1525431e137, type: 3}
+  - name: BMC AP50
+    type: Bering Manufactoring Co. Auto Pistol
+    cost: 0
+    desc: Bering's mass-production auto pistol, frequently used as a sidearm.
+    model: {fileID: 386830955001173617, guid: 5be2714404112ac4db4be51822c19d0b, type: 3}
+    bullet: {fileID: 7660068625065095931, guid: 158b0902a12b9dd4395ace7512b092b1, type: 3}
+    bulletSpawn: {fileID: 0}
+    damage: 4
+    speed: 0.2
+    fireType: 1
+    bulletType: 0
+    bulletSpeed: 250
+    spread: 2.5
+    ammoPerMag: 20
+    reloadSpeed: 1.75
+    burstSize: 0
+    burstSpeed: 0
+    playBurstSound: 0
+    consumeBurstAmmo: 0
+    explosionSize: 0
+    explosionLifetime: 0
+    useAmmo: 1
+    infiniteAmmo: 0
+    spawnFX: 1
+    speedMod: 0
+    jumpMod: 0
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 8300000, guid: 43f4446dffaa0be45b2a7675b0e6440b, type: 3}
+  - name: ATS 350-BR
+    type: Arc Tactical Supplies Burst Rifle
+    cost: 150
+    desc: Arc's low-end burst rifle, useful for medium range combat.
+    model: {fileID: 4266456828089396731, guid: 96dd497975c0ae94ba48dc21c5bb06f5, type: 3}
+    bullet: {fileID: 7660068625065095931, guid: 158b0902a12b9dd4395ace7512b092b1, type: 3}
+    bulletSpawn: {fileID: 0}
+    damage: 15
+    speed: 0.6
+    fireType: 2
+    bulletType: 0
+    bulletSpeed: 280
+    spread: 1.5
+    ammoPerMag: 30
+    reloadSpeed: 2
+    burstSize: 3
+    burstSpeed: 0.2
+    playBurstSound: 1
+    consumeBurstAmmo: 1
+    explosionSize: 0
+    explosionLifetime: 0
+    useAmmo: 1
+    infiniteAmmo: 0
+    spawnFX: 1
+    speedMod: 1.5
+    jumpMod: 1.5
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 8300000, guid: 12d101b8eff753a48ae7b1525431e137, type: 3}
+  - name: DW Jackal
+    type: Dchovsky Weaponry Rifle
+    cost: 150
+    desc: Dchovsky's basic, low-end rifle, best at medium range.
+    model: {fileID: 2554341636701610610, guid: a5b92c313c7881148b9cae0d7bb27109, type: 3}
+    bullet: {fileID: 7660068625065095931, guid: 158b0902a12b9dd4395ace7512b092b1, type: 3}
+    bulletSpawn: {fileID: 0}
+    damage: 40
+    speed: 0.85
+    fireType: 0
+    bulletType: 0
+    bulletSpeed: 325
+    spread: 0.025
+    ammoPerMag: 5
+    reloadSpeed: 2
+    burstSize: 0
+    burstSpeed: 0
+    playBurstSound: 0
+    consumeBurstAmmo: 0
+    explosionSize: 0
+    explosionLifetime: 0
+    useAmmo: 1
+    infiniteAmmo: 0
+    spawnFX: 1
+    speedMod: -0.5
+    jumpMod: -0.5
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 8300000, guid: ed544c30ba18db44d9f40e56ee7f82e4, type: 3}
+  - name: BMC SG670
+    type: Bering Manufactoring Co. Shotgun
+    cost: 150
+    desc: Bering's civilian grade shotgun, popular for skeet shooting.
+    model: {fileID: 7575995667005862678, guid: 7afd53efd6056ef4890076ccf9af7259, type: 3}
+    bullet: {fileID: 7660068625065095931, guid: 158b0902a12b9dd4395ace7512b092b1, type: 3}
+    bulletSpawn: {fileID: 0}
+    damage: 6
+    speed: 0.75
+    fireType: 2
+    bulletType: 0
+    bulletSpeed: 325
+    spread: 3
+    ammoPerMag: 6
+    reloadSpeed: 2
+    burstSize: 18
+    burstSpeed: 0.025
+    playBurstSound: 0
+    consumeBurstAmmo: 0
+    explosionSize: 0
+    explosionLifetime: 0
+    useAmmo: 1
+    infiniteAmmo: 0
+    spawnFX: 1
+    speedMod: -1
+    jumpMod: -1
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 8300000, guid: 6a0bba8e73b4c0b4fb5782a4e7450987, type: 3}
+  - name: ATS 460-AR
+    type: Arc Tactical Supplies Assault Rifle
+    cost: 1000
+    desc: Frequently used by crime syndicates and militaries worldwide, this is one
+      of Arc's most popular weapons.
+    model: {fileID: 2232287824437752646, guid: 38e3816078450fd4d9c239c07fe4796f, type: 3}
+    bullet: {fileID: 7660068625065095931, guid: 158b0902a12b9dd4395ace7512b092b1, type: 3}
+    bulletSpawn: {fileID: 0}
+    damage: 9
+    speed: 0.1
+    fireType: 1
+    bulletType: 0
+    bulletSpeed: 350
+    spread: 1
+    ammoPerMag: 30
+    reloadSpeed: 1.5
+    burstSize: 0
+    burstSpeed: 0
+    playBurstSound: 0
+    consumeBurstAmmo: 0
+    explosionSize: 0
+    explosionLifetime: 0
+    useAmmo: 1
+    infiniteAmmo: 0
+    spawnFX: 1
+    speedMod: 1.5
+    jumpMod: 1.5
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 8300000, guid: 43f4446dffaa0be45b2a7675b0e6440b, type: 3}
+  - name: DW Wyvern
+    type: Dchovsky Weaponry Sniper Rifle
+    cost: 1000
+    desc: A mainstream sniper rifle, best at long range.
+    model: {fileID: 2638833537083996227, guid: 1cfc86273b034df47ae805d624ea543a, type: 3}
+    bullet: {fileID: 7660068625065095931, guid: 158b0902a12b9dd4395ace7512b092b1, type: 3}
+    bulletSpawn: {fileID: 0}
+    damage: 65
+    speed: 1.5
+    fireType: 0
+    bulletType: 0
+    bulletSpeed: 450
+    spread: 0.1
+    ammoPerMag: 5
+    reloadSpeed: 3
+    burstSize: 0
+    burstSpeed: 0
+    playBurstSound: 0
+    consumeBurstAmmo: 0
+    explosionSize: 0
+    explosionLifetime: 0
+    useAmmo: 1
+    infiniteAmmo: 0
+    spawnFX: 1
+    speedMod: -2
+    jumpMod: -2
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 8300000, guid: 01f2295d11062bd408b50fa1ea3960df, type: 3}
+  - name: BMC LMG890
+    type: Berin Manufactoring Co. Light Machine Gun
+    cost: 1000
+    desc: Bering's cross between a machine gun and an assault rifle, giving the best
+      of both worlds.
+    model: {fileID: 3240759982553569101, guid: 499094b31fe257c4183d5f9d92881677, type: 3}
+    bullet: {fileID: 7660068625065095931, guid: 158b0902a12b9dd4395ace7512b092b1, type: 3}
+    bulletSpawn: {fileID: 0}
+    damage: 4
+    speed: 0.065
+    fireType: 1
+    bulletType: 0
+    bulletSpeed: 325
+    spread: 0.75
+    ammoPerMag: 60
+    reloadSpeed: 2.5
+    burstSize: 0
+    burstSpeed: 0
+    playBurstSound: 0
+    consumeBurstAmmo: 0
+    explosionSize: 0
+    explosionLifetime: 0
+    useAmmo: 1
+    infiniteAmmo: 0
+    spawnFX: 0
+    speedMod: -2
+    jumpMod: -1
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 8300000, guid: 117a00fe18eb8f146a4edc731c83b9af, type: 3}
+  - name: ATS 980-BR
+    type: Arc Tactical Supplies Burst Rifle
+    cost: 10000
+    desc: Arc's flagship gun, a powerful and light burst rifle. It exists in a legal
+      gray area. Outfitted with dual lasers, suppressor, a flashlight, and an extra
+      large sniper scope.
+    model: {fileID: 8003024966385396489, guid: 5c94e93f5dcd98a43b4a98d82a3ecad9, type: 3}
+    bullet: {fileID: 7660068625065095931, guid: 158b0902a12b9dd4395ace7512b092b1, type: 3}
+    bulletSpawn: {fileID: 0}
+    damage: 20
+    speed: 0.16
+    fireType: 2
+    bulletType: 0
+    bulletSpeed: 350
+    spread: 0.2
+    ammoPerMag: 50
+    reloadSpeed: 1.5
+    burstSize: 3
+    burstSpeed: 0.05
+    playBurstSound: 1
+    consumeBurstAmmo: 1
+    explosionSize: 0
+    explosionLifetime: 0
+    useAmmo: 1
+    infiniteAmmo: 0
+    spawnFX: 1
+    speedMod: 2
+    jumpMod: 2
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 8300000, guid: 43f4446dffaa0be45b2a7675b0e6440b, type: 3}
+  - name: DW Dragon
+    type: Dchovsky Weaponry Sniper Rifle
+    cost: 10000
+    desc: An upgraded version of Dchovsky's Wyvern sniper rifle. Comes with an extra
+      large scope, suppressor, and triple tactical lasers.
+    model: {fileID: 3880782171106804259, guid: 7750e43df3556684aa934ad6cf1c0a99, type: 3}
+    bullet: {fileID: 7660068625065095931, guid: 158b0902a12b9dd4395ace7512b092b1, type: 3}
+    bulletSpawn: {fileID: 0}
+    damage: 80
+    speed: 0.5
+    fireType: 0
+    bulletType: 0
+    bulletSpeed: 450
+    spread: 0
+    ammoPerMag: 10
+    reloadSpeed: 3.5
+    burstSize: 0
+    burstSpeed: 0
+    playBurstSound: 0
+    consumeBurstAmmo: 0
+    explosionSize: 0
+    explosionLifetime: 0
+    useAmmo: 1
+    infiniteAmmo: 0
+    spawnFX: 1
+    speedMod: -2
+    jumpMod: -2
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 8300000, guid: 01f2295d11062bd408b50fa1ea3960df, type: 3}
+  - name: BMC HMG1090
+    type: Bering Manufactoring Co. Heavy Machine Gun
+    cost: 10000
+    desc: Bering's most powerful machine gun, equipped with triple cylinder magazines,
+      so you won't have to think about reloading. Ever.
+    model: {fileID: 9113075208403432634, guid: 8407fd18a40419a49ad4fdf96f74610d, type: 3}
+    bullet: {fileID: 7660068625065095931, guid: 158b0902a12b9dd4395ace7512b092b1, type: 3}
+    bulletSpawn: {fileID: 0}
+    damage: 8
+    speed: 0.05
+    fireType: 1
+    bulletType: 0
+    bulletSpeed: 380
+    spread: 2
+    ammoPerMag: 150
+    reloadSpeed: 3.5
+    burstSize: 0
+    burstSpeed: 0
+    playBurstSound: 0
+    consumeBurstAmmo: 0
+    explosionSize: 0
+    explosionLifetime: 0
+    useAmmo: 1
+    infiniteAmmo: 0
+    spawnFX: 1
+    speedMod: -2
+    jumpMod: -2
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 8300000, guid: 12d101b8eff753a48ae7b1525431e137, type: 3}
+  - name: Obliterator
+    type: Overkill
+    cost: 30000
+    desc: If you actually need something this powerful, you should look into a interstellar
+      warship.
+    model: {fileID: 7920520995920962599, guid: 95b7c029b4e7b2c409c1879adcaaec59, type: 3}
+    bullet: {fileID: 7660068625065095931, guid: 158b0902a12b9dd4395ace7512b092b1, type: 3}
+    bulletSpawn: {fileID: 0}
+    damage: 6
+    speed: 0.01
+    fireType: 1
+    bulletType: 0
+    bulletSpeed: 250
+    spread: 6
+    ammoPerMag: 2000
+    reloadSpeed: 5
+    burstSize: 0
+    burstSpeed: 0
+    playBurstSound: 0
+    consumeBurstAmmo: 0
+    explosionSize: 0
+    explosionLifetime: 0
+    useAmmo: 1
+    infiniteAmmo: 0
+    spawnFX: 1
+    speedMod: 0
+    jumpMod: 0
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 8300000, guid: 12d101b8eff753a48ae7b1525431e137, type: 3}
+  - name: Annihilator
+    type: Overkill
+    cost: 30000
+    desc: For when you need to snipe things on other planets.
+    model: {fileID: 2644816798860493636, guid: 187670b0f7dda2549ab1ae2bbb6d48ec, type: 3}
+    bullet: {fileID: 7660068625065095931, guid: 158b0902a12b9dd4395ace7512b092b1, type: 3}
+    bulletSpawn: {fileID: 0}
+    damage: 1000
+    speed: 2
+    fireType: 2
+    bulletType: 0
+    bulletSpeed: 250
+    spread: 0
+    ammoPerMag: 10
+    reloadSpeed: 3.5
+    burstSize: 3
+    burstSpeed: 0.05
+    playBurstSound: 0
+    consumeBurstAmmo: 0
+    explosionSize: 0
+    explosionLifetime: 0
+    useAmmo: 1
+    infiniteAmmo: 0
+    spawnFX: 1
+    speedMod: 0
+    jumpMod: 0
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 8300000, guid: 8acbe78a0189fdf469375bbd87c4545b, type: 3}
+  - name: Faulty Mortar
+    type: Semiautomatic Rocket Launcher
+    cost: 15000
+    desc: Like a mortar, but rejected.
+    model: {fileID: 6726405634201136226, guid: f5427bde396c4ab4f881dea5637d8c30, type: 3}
+    bullet: {fileID: 5536322355079694336, guid: ebbd426dc5bb5ab4b849571c42c95142, type: 3}
+    bulletSpawn: {fileID: 0}
+    damage: 250
+    speed: 3
+    fireType: 0
+    bulletType: 1
+    bulletSpeed: 80
+    spread: 6
+    ammoPerMag: 5
+    reloadSpeed: 3
+    burstSize: 0
+    burstSpeed: 0
+    playBurstSound: 0
+    consumeBurstAmmo: 0
+    explosionSize: 7
+    explosionLifetime: 2
+    useAmmo: 1
+    infiniteAmmo: 0
+    spawnFX: 1
+    speedMod: 0
+    jumpMod: 0
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 8300000, guid: 8acbe78a0189fdf469375bbd87c4545b, type: 3}
+  - name: DB Shotgun
+    type: Burst Shotgun
+    cost: 2000
+    desc: An old-fashioned shotgun.
+    model: {fileID: 4947790786364464601, guid: 3b6f53bd053deef4eb2ef8a943fbdd71, type: 3}
+    bullet: {fileID: 8646918932935486487, guid: 713e0ca525fbd50428062ef383f61679, type: 3}
+    bulletSpawn: {fileID: 0}
+    damage: 40
+    speed: 2
+    fireType: 2
+    bulletType: 0
+    bulletSpeed: 160
+    spread: 4
+    ammoPerMag: 6
+    reloadSpeed: 4
+    burstSize: 2
+    burstSpeed: 0.25
+    playBurstSound: 0
+    consumeBurstAmmo: 0
+    explosionSize: 0
+    explosionLifetime: 0
+    useAmmo: 1
+    infiniteAmmo: 0
+    spawnFX: 1
+    speedMod: 0
+    jumpMod: 0
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 8300000, guid: 6a0bba8e73b4c0b4fb5782a4e7450987, type: 3}
+  armors:
+  - name: None
+    type: Common Clothes
+    cost: 0
+    desc: Just your standard outfit.
+    damageReduction: 0
+    healthBonus: 0
+    speedMod: 0
+    jumpMod: 0
+  - name: RDS I-A
+    type: Riot Defensive Systems Bullet Proof Vest
+    cost: 50
+    desc: RDS' basic entry level bullet proof vest.
+    damageReduction: 20
+    healthBonus: 25
+    speedMod: 0
+    jumpMod: 0
+  - name: RDS II-A
+    type: Riot Defensive Systems Bullet Proof Vest
+    cost: 350
+    desc: RDS' lower mid-range bullet proof vest. Balances mobility and protection.
+    damageReduction: 40
+    healthBonus: 50
+    speedMod: -0.5
+    jumpMod: -0.5
+  - name: RDS III-A
+    type: Riot Defensive Systems Body Armor
+    cost: 3000
+    desc: RDS' mid-range body armor, providing significant protection, without encumbering
+      the wearer too much.
+    damageReduction: 60
+    healthBonus: 100
+    speedMod: -1.5
+    jumpMod: -1.5
+  - name: RDS IV-A
+    type: Riot Defensive Systems Body Armor
+    cost: 15000
+    desc: RDS' high-end body armor. Provides more han enough protection for most
+      situations, as long as mobility is unnecessary.
+    damageReduction: 80
+    healthBonus: 250
+    speedMod: -2.5
+    jumpMod: -2.5
+  - name: RDS IV-B
+    type: Riot Defensive Systems Bullet Proof Vest
+    cost: 15000
+    desc: RDS' high-end bullet proof vest, designed to provide maximum mobility,
+      while still offering significant protection.
+    damageReduction: 50
+    healthBonus: 80
+    speedMod: 1
+    jumpMod: 1
+  uiNumber: 0
+  weapon1SelectUI: {fileID: 8262530158639887763, guid: ec28099a16426d24d9c1f9fda2ce6620, type: 3}
+  weapon2SelectUI: {fileID: 8262530158639887763, guid: ec28099a16426d24d9c1f9fda2ce6620, type: 3}
+  armorSelectUI: {fileID: 5135442710087539104, guid: fb421b968fa53de43a2173b266638310, type: 3}
+  readyUI: {fileID: 5749166221577895488, guid: b8d596b6ab1c4be4599856334598b8fa, type: 3}
+  uiPosition: {fileID: 1377762248376280839}
+  money: 0
+  playerWeapons:
+  - name: 
+    type: 
+    cost: 0
+    desc: 
+    model: {fileID: 0}
+    bullet: {fileID: 0}
+    bulletSpawn: {fileID: 0}
+    damage: 0
+    speed: 0
+    fireType: 0
+    bulletType: 0
+    bulletSpeed: 0
+    spread: 0
+    ammoPerMag: 0
+    reloadSpeed: 0
+    burstSize: 0
+    burstSpeed: 0
+    playBurstSound: 0
+    consumeBurstAmmo: 0
+    explosionSize: 0
+    explosionLifetime: 0
+    useAmmo: 0
+    infiniteAmmo: 0
+    spawnFX: 0
+    speedMod: 0
+    jumpMod: 0
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 0}
+  - name: 
+    type: 
+    cost: 0
+    desc: 
+    model: {fileID: 0}
+    bullet: {fileID: 0}
+    bulletSpawn: {fileID: 0}
+    damage: 0
+    speed: 0
+    fireType: 0
+    bulletType: 0
+    bulletSpeed: 0
+    spread: 0
+    ammoPerMag: 0
+    reloadSpeed: 0
+    burstSize: 0
+    burstSpeed: 0
+    playBurstSound: 0
+    consumeBurstAmmo: 0
+    explosionSize: 0
+    explosionLifetime: 0
+    useAmmo: 0
+    infiniteAmmo: 0
+    spawnFX: 0
+    speedMod: 0
+    jumpMod: 0
+    ammo: 0
+    unloadedAmmo: 0
+    shotSound: {fileID: 0}
+  playerArmor:
+    name: 
+    type: 
+    cost: 0
+    desc: 
+    damageReduction: 0
+    healthBonus: 0
+    speedMod: 0
+    jumpMod: 0
+  playerModel: {fileID: 1238675997878659260, guid: 9b644c997c478bc489e94395942b6c57, type: 3}
+  player: {fileID: 0}
+  waveLength: 15
+  enemiesPerWave: 0200000005000000
+  enemyModels:
+  - enemies:
+    - {fileID: 1735819323121843133, guid: ce86860098300b64cade30668c0c886b, type: 3}
+    - {fileID: 1735819323121843133, guid: ce86860098300b64cade30668c0c886b, type: 3}
+    - {fileID: 1735819323121843133, guid: ce86860098300b64cade30668c0c886b, type: 3}
+    - {fileID: 5710872386205878067, guid: 5d029f3afbbb7c04a94d46ff962c45da, type: 3}
+    - {fileID: 5710872386205878067, guid: 5d029f3afbbb7c04a94d46ff962c45da, type: 3}
+    - {fileID: 4388799963854524181, guid: 8d28bd7c9b9bc024ab06c48f4ec35334, type: 3}
+    - {fileID: 1055012648915346029, guid: 063f4d2670975964689acb0a9cc1d426, type: 3}
+  - enemies:
+    - {fileID: 872667651521334675, guid: 203bc803bc0b8e84a991614c99d260da, type: 3}
+    - {fileID: 1055012648915346029, guid: 063f4d2670975964689acb0a9cc1d426, type: 3}
+    - {fileID: 2263965660468457271, guid: c95ea47e31a109249b503c104d965f6b, type: 3}
+    - {fileID: 7435327544925827989, guid: 395ce1056f00acc45a2bf0d11e9b9c6f, type: 3}
+    - {fileID: 7435327544925827989, guid: 395ce1056f00acc45a2bf0d11e9b9c6f, type: 3}
+    - {fileID: 6036310928506032002, guid: 5c11ba0ac85ffca4e95ca52ed3decade, type: 3}
+    - {fileID: 8948471650533043521, guid: f55c278ac768da143a9ece049b49c1e3, type: 3}
+    - {fileID: 8948471650533043521, guid: f55c278ac768da143a9ece049b49c1e3, type: 3}
+  - enemies:
+    - {fileID: 4219679221850458605, guid: 955274bdf99c7b44d84528ec8c68c488, type: 3}
+    - {fileID: 7466411907598316186, guid: 51fca75abb2475940907a744a34974ba, type: 3}
+    - {fileID: 762265955213031934, guid: 55a82edf46402d74ab8fdb1fa55e260d, type: 3}
+    - {fileID: 1569703875006394206, guid: 361edbbac224ef9458efc04e672f3680, type: 3}
+    - {fileID: 1569703875006394206, guid: 361edbbac224ef9458efc04e672f3680, type: 3}
+    - {fileID: 5090342478059239911, guid: c5b21af95d34b2f4a9c71895039f52f9, type: 3}
+    - {fileID: 2777138272976340865, guid: bf029b03d4e2cc14b9782286adb3370a, type: 3}
+  - enemies:
+    - {fileID: 482945740761552917, guid: b83f271594bbcda45b125cb13d94e84c, type: 3}
+    - {fileID: 482945740761552917, guid: b83f271594bbcda45b125cb13d94e84c, type: 3}
+    - {fileID: 2781763100695780848, guid: d3348accb2dde794ea5d729189e891cb, type: 3}
+    - {fileID: 3623650071441698234, guid: 7128de2b64e6c834fabce3a03805f29c, type: 3}
+    - {fileID: 5203560243555131301, guid: f5f8f7a860765a544af74978640b684c, type: 3}
+    - {fileID: 3540500541322580383, guid: d9b2b8fe7f7b98e4bbd04e1c7e4fa22e, type: 3}
+    - {fileID: 4973631802038279694, guid: 5b63e63234be04044a366e2813bab92f, type: 3}
+    - {fileID: 4258032116750197477, guid: b37117138712ac54fa9332aec3ae3f88, type: 3}
+  - enemies:
+    - {fileID: 1536654643549855184, guid: a2ddfdbf68180764da6e5b1db358d891, type: 3}
+    - {fileID: 1536654643549855184, guid: a2ddfdbf68180764da6e5b1db358d891, type: 3}
+    - {fileID: 7191077455926622137, guid: 6d06fffc61ba7d84fbf12e637e730bf1, type: 3}
+    - {fileID: 2898670000568026102, guid: 7cd7940af1ed8bf49bc33ec70e7c0377, type: 3}
+    - {fileID: 8168499113967451295, guid: 9ec898ba9dc3a7e4f876627ff6cc09a9, type: 3}
+    - {fileID: 880468401835452000, guid: 8301e62a9262d39488e72993dcaa8713, type: 3}
+    - {fileID: 2879001298891631127, guid: cb2648f57ebc74d47af2b57e6c2ee136, type: 3}
+  - enemies:
+    - {fileID: 6201411606730516130, guid: 4c5a9d323c2fd0c45b6295c2de10a28f, type: 3}
+    - {fileID: 6201411606730516130, guid: 4c5a9d323c2fd0c45b6295c2de10a28f, type: 3}
+    - {fileID: 7454644371508990219, guid: a0af78fb9f67c8e4b8182d9ddeed6508, type: 3}
+    - {fileID: 2687618082530326903, guid: a0ddb48c700ac2f41ae0edbe670bd00b, type: 3}
+    - {fileID: 3085390363532042413, guid: c14f0d6b1a6a2724d9d71c1d0b5cfbe4, type: 3}
+    - {fileID: 5323900971951864535, guid: c48f96869ed729644bbcc139a0ebef12, type: 3}
+    - {fileID: 1783183991923447464, guid: 82216b2480033e64ba3cbc45eba923bf, type: 3}
+  - enemies:
+    - {fileID: 3917191121859081299, guid: 888f350682e0f214ea1dad0c98ea72b1, type: 3}
+    - {fileID: 3917191121859081299, guid: 888f350682e0f214ea1dad0c98ea72b1, type: 3}
+    - {fileID: 1005228584687742076, guid: 33738b8e1b5ea524fa2abcfa5bfc3736, type: 3}
+    - {fileID: 7147933043837180547, guid: 5eb52a245570abb4ea7cae033fd66c20, type: 3}
+    - {fileID: 8196127316936830184, guid: eb922ab0530f9cc40a74a1f08e696049, type: 3}
+    - {fileID: 2587219677842208326, guid: a9fcd72229fed41459e35fb153fafdc2, type: 3}
+    - {fileID: 3327899269458338163, guid: 4f55bbc530ef8b0439462591049de39b, type: 3}
+  - enemies:
+    - {fileID: 6427366548550745407, guid: 34a1e52c06142cb42b5b8dddaf20c969, type: 3}
+    - {fileID: 6427366548550745407, guid: 34a1e52c06142cb42b5b8dddaf20c969, type: 3}
+    - {fileID: 5458402369311459258, guid: 8ad4c60e718eb2343abbd43db77d1014, type: 3}
+    - {fileID: 2113384043127952922, guid: c384a564faa521d43861e37f0b0ff753, type: 3}
+    - {fileID: 1624098929945698237, guid: 99c3620ee60869140af77782622fe9a3, type: 3}
+    - {fileID: 7944703259942718725, guid: 9af376d41d0a364458147a6222a0291d, type: 3}
+    - {fileID: 8127429801282932171, guid: 5ae2623f0b108794e9f2b32d54ed28db, type: 3}
+  - enemies:
+    - {fileID: 2044449122476059958, guid: 4355f43b149a58e40bf044210048af02, type: 3}
+    - {fileID: 2044449122476059958, guid: 4355f43b149a58e40bf044210048af02, type: 3}
+    - {fileID: 5532754879734519379, guid: 62ae224a4dc95084baf64598993b456d, type: 3}
+    - {fileID: 2156442203633114382, guid: c62024b981a9424458e5a25a42718770, type: 3}
+    - {fileID: 8083400914075042023, guid: 16221685216a6834a99730031164b3d2, type: 3}
+    - {fileID: 4358445951104155790, guid: cefecc46c25abfd4e84ff1668e2bbc03, type: 3}
+    - {fileID: 4752458668743070390, guid: 62597a7ffaf6eba47b45062639175551, type: 3}
+  - enemies:
+    - {fileID: 6917339765296377995, guid: 05aaa5740990e9741baf22ccb49cde50, type: 3}
+    - {fileID: 6917339765296377995, guid: 05aaa5740990e9741baf22ccb49cde50, type: 3}
+    - {fileID: 418583779100379022, guid: 156934cb142bb37439fd12229564c152, type: 3}
+    - {fileID: 3587378790316907971, guid: 45c18ebc92f0adf40ab5decc4370812d, type: 3}
+    - {fileID: 749702553850162116, guid: 5b54b033f7afd7848a38f81b5b615a9a, type: 3}
+    - {fileID: 1466051217750769600, guid: 0c60d243e9178004dbbf264f068689cb, type: 3}
+    - {fileID: 2622168577785324167, guid: 0832a9adecf911b4a8c1306c1fc09b0d, type: 3}
+    - {fileID: 1191988176601309196, guid: 1644898be177a774f8b28531d4f6e84a, type: 3}
+  wave: 1
+  enemies: 0
+  maxEnemies: 25
+  pickUpsPerWave: 0100000003000000
+  pickUps:
+  - {fileID: 6557353964402883716, guid: e4f4bb10f6583ec4db4301f6bbf866f9, type: 3}
+  - {fileID: 8407953454336377950, guid: eaad6faa2b0617341968f5b73473a2b4, type: 3}
+  - {fileID: 2895999924813898573, guid: 87b023c35a062184b96a18f3637d5e2c, type: 3}
+  playerSpawn: {fileID: 0}
+  enemySpawns:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!1 &1377762248376280838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1377762248376280839}
+  m_Layer: 0
+  m_Name: UI Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1377762248376280839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377762248376280838}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 185.1854, y: -125, z: 146.12106}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1377762248030813107}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
